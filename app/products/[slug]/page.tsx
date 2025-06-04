@@ -99,7 +99,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             {(product.isNew || product.discountPercentage > 0) && (
               <div className="absolute left-4 top-4 flex flex-col gap-2">
                 {product.isNew && (
-                  <Badge variant="default" className="bg-primary text-primary-foreground">New</Badge>
+                  <Badge variant="default\" className="bg-primary text-primary-foreground">New</Badge>
                 )}
                 {product.discountPercentage > 0 && (
                   <Badge variant="destructive">-{product.discountPercentage}%</Badge>
